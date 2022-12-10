@@ -4,12 +4,21 @@ const initialState = {
     likes: 11
 }
 
-const reducer = (state = initialState, action) =>{
+const reducer = (state = initialState, action) => {
 
-    console.log('reducer > ',action)
+    console.log('reducer > ', action)
 
-    return state;
+    switch (action.type) {
+        case 'INCREMENT':
+            return {
+                ...state,
+                likes: state.likes + 1
+            }
+        default:
+            return state
+    }
+
 
 }
 const store = createStore(reducer)
-export default  store
+export default store
