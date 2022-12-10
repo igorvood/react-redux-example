@@ -5,6 +5,7 @@ function Likes(props){
     console.log('render Likes>',props)
     return(
         <div>
+            <h3>H3 -> {props.likes}</h3>
             <button onClick={props.onIncrementLikes}> like -> { props.likes} </button>
             <button>Dislike </button>
         </div>
