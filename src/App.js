@@ -1,15 +1,20 @@
 import './App.css';
 import Likes from "./component/Likes";
 import Title from "./component/Title";
+import Comments from "./component/Comments";
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <Title/>
-                <Likes/>
-
-            </header>
+            <div className="wrap">
+                <div className="card">
+                    <div className="card-img">
+                        <Title/>
+                        <Likes/>
+                    </div>
+                    <Comments/>
+                </div>
+            </div>
         </div>
     );
 }
