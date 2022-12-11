@@ -20,7 +20,6 @@ function mapStateToProps(state){
     return {
         likes: likesReducer.likes
     }
-    // return state
 }
 
 function mapDispatchToProps(dispatch){
