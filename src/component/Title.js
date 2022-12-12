@@ -1,5 +1,5 @@
 import {useDispatch, useSelector} from "react-redux";
-import {inputText} from "../redux/actions";
+import {inputTextAction} from "../redux/actions";
 
 function Title(props) {
 
@@ -11,7 +11,7 @@ function Title(props) {
 
     const handleChange = (e) => {
         console.log('handleChange > ', e.target.value)
-        dispatch(inputText(e.target.value))
+        dispatch(inputTextAction(e.target.value))
     }
 
     return (

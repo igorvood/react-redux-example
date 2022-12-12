@@ -1,19 +1,19 @@
 import {DECREMENT, INCREMENT, INPUT_TEXT} from "./types";
 
 
-export function incrementLikes(){
+export function incrementLikesAction(){
     return {
         type: INCREMENT
     }
 }
 
-export function decrementLikes(){
+export function decrementLikesAction(){
     return {
         type: DECREMENT
     }
 }
 
-export function inputText(text){
+export function inputTextAction(text){
     return {
         type: INPUT_TEXT,
         text
